@@ -1,6 +1,7 @@
 import Navigation from './components/Navigation'
 import Hero from './components/Hero'
 import TrustedPartners from './components/TrustedPartners'
+import Features from './components/Features'
 import './App.css'
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <Navigation />
       <Hero />
       <TrustedPartners />
+      <Features />
     </div>
   )
 }
