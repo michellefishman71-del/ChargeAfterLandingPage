@@ -73,14 +73,15 @@ function TrustedPartners() {
           </div>
         </div>
 
-        {/* Waterfall Illustration */}
-        <div className="relative w-full h-[1017px]">
-          <img 
-            src={Waterfall} 
-            alt="Application waterfall showing Prime, Near-Prime, and Sub-Prime lenders" 
-            className="w-full h-full object-cover"
-          />
-        </div>
+      </div>
+
+      {/* Waterfall Illustration - Full screen width */}
+      <div className="relative h-[1017px] w-screen overflow-hidden">
+        <img 
+          src={Waterfall} 
+          alt="Application waterfall showing Prime, Near-Prime, and Sub-Prime lenders" 
+          className="absolute h-full w-auto min-w-full left-[-50px] top-0 object-cover object-left"
+        />
       </div>
     </section>
   )
