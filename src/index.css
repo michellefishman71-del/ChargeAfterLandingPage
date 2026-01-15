@@ -1,1 +1,24 @@
 @import "tailwindcss";
+
+/* Google Font - Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+/* Design Tokens */
+@theme {
+  --color-primary: #694ad4;
+  --color-cta: #1fef8a;
+  --color-bg: #f9f8fd;
+  --color-dark: #302f37;
+  --color-text: #302f37;
+  --color-text-light: #0a1930;
+  --color-border: #e5e7eb;
+  --font-family-base: 'Montserrat', sans-serif;
+}
+
+/* Base Styles */
+body {
+  font-family: var(--font-family-base);
+  background-color: var(--color-bg);
+  margin: 0;
+  padding: 0;
+}
