@@ -2,6 +2,7 @@ import Navigation from './components/Navigation'
 import Hero from './components/Hero'
 import TrustedPartners from './components/TrustedPartners'
 import Features from './components/Features'
+import Footer from './components/Footer'
 import './App.css'
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <Hero />
       <TrustedPartners />
       <Features />
+      <Footer />
     </div>
   )
 }

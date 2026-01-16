@@ -1,12 +1,12 @@
-// Images from Figma (correct URLs)
-const applyIcon = "http://localhost:3845/assets/8d74dd3c149c3cf01f179f298d002bb4ebe293b6.png"
-const arrowIcon = "http://localhost:3845/assets/35cdc1f00dbe87f1de1c8790b41029684f0ff55d.svg"
-const icon1 = "http://localhost:3845/assets/2e446049f854e7e32f7a58f1c696ffd4ccf71370.svg"
-const icon2 = "http://localhost:3845/assets/9cc88481e7622e1c6449002ef7e4bfa2e927732f.svg"
-const icon3 = "http://localhost:3845/assets/fdc13d48e6b863e6002496b1a164e0410fbfba8e.svg"
-const icon4 = "http://localhost:3845/assets/ab14687414a1b18399317dc7e92313c64db76217.svg"
-const icon5 = "http://localhost:3845/assets/f1417a703d009bc728921b6da2d6aa1bf4b964d3.svg"
-const icon6 = "http://localhost:3845/assets/8c2c79f2105ec88a87e25377602ba2f67820b86d.svg"
+// Import local assets
+import stepIconsSprite from '../assets/step_icons_sprite.png'
+import arrowIcon from '../assets/arrow.svg'
+import icon1 from '../assets/feature_icon_01.svg'
+import icon2 from '../assets/feature_icon_02.svg'
+import icon3 from '../assets/feature_icon_03.svg'
+import icon4 from '../assets/feature_icon_04.svg'
+import icon5 from '../assets/feature_icon_05.svg'
+import icon6 from '../assets/feature_icon_06.svg'
 
 // Feature Card Component
 const FeatureCard = ({ icon, title, description }) => (
@@ -23,33 +23,6 @@ const FeatureCard = ({ icon, title, description }) => (
   </div>
 )
 
-// Step Component for Apply -> Get Approved -> Start
-const Step = ({ icon, title, description, showArrow = true }) => (
-  <div className="flex items-center gap-[49px]">
-    <div className="flex flex-col gap-[12px] w-[329px]">
-      <div className="h-[86px] w-[87px] overflow-hidden relative">
-        <img 
-          src={icon} 
-          alt="" 
-          className="absolute h-[323px] w-[289px] object-cover"
-          style={{ top: '-116px', left: '-16px' }}
-        />
-      </div>
-      <div className="flex flex-col gap-[16px]">
-        <h3 className="font-['Montserrat',sans-serif] font-bold text-[24px] text-[#302f37] leading-[32px]">
-          {title}
-        </h3>
-        <p className="font-['Montserrat',sans-serif] font-normal text-[18px] text-[#302f37] leading-[32px]">
-          {description}
-        </p>
-      </div>
-    </div>
-    {showArrow && (
-      <img src={arrowIcon} alt="" className="w-[31px] h-[15px]" />
-    )}
-  </div>
-)
-
 function Features() {
   return (
     <section className="relative w-full bg-[#f9f8fd] py-[100px]">
@@ -60,7 +33,7 @@ function Features() {
           <div className="flex flex-col gap-[12px] w-[329px]">
             <div className="h-[86px] w-[87px] relative overflow-hidden">
               <img 
-                src={applyIcon} 
+                src={stepIconsSprite} 
                 alt="Apply" 
                 className="absolute max-w-none"
                 style={{ 
@@ -88,7 +61,7 @@ function Features() {
           <div className="flex flex-col gap-[12px] w-[344px]">
             <div className="h-[86px] w-[83px] relative overflow-hidden">
               <img 
-                src={applyIcon} 
+                src={stepIconsSprite} 
                 alt="Get Approved" 
                 className="absolute max-w-none"
                 style={{ 
@@ -116,7 +89,7 @@ function Features() {
           <div className="flex flex-col gap-[12px] w-[295px]">
             <div className="h-[86px] w-[91px] relative overflow-hidden">
               <img 
-                src={applyIcon} 
+                src={stepIconsSprite} 
                 alt="Start The Project" 
                 className="absolute max-w-none"
                 style={{ 

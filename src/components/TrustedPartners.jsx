@@ -10,7 +10,7 @@ import I09 from '../assets/I_09.svg'
 import I10 from '../assets/I_10.svg'
 import I11 from '../assets/I_11.svg'
 import I12 from '../assets/I_12.svg'
-import Waterfall from '../assets/Waterfall.svg'
+import WaterfallImage from '../assets/waterfall_illustration.png'
 
 // Purple dot separator component
 const Dot = () => (
@@ -20,6 +20,15 @@ const Dot = () => (
 function TrustedPartners() {
   return (
     <section className="relative w-full bg-[#f9f8fd]">
+      {/* Waterfall Illustration - Positioned absolutely behind content */}
+      <div className="absolute left-1/2 -translate-x-1/2 top-[452px] w-[1444px]">
+        <img 
+          src={WaterfallImage} 
+          alt="Application waterfall showing Prime, Near-Prime, and Sub-Prime lenders with 85% Approvals"
+          className="w-full h-auto"
+        />
+      </div>
+
       <div className="relative w-[1441px] mx-auto flex flex-col items-center gap-[170px]">
         {/* Trusted Partners Section */}
         <div className="flex flex-col items-center gap-[100px] w-full px-[320px]">
@@ -62,12 +71,12 @@ function TrustedPartners() {
         </div>
 
         {/* One App Section */}
-        <div className="flex items-center p-[64px]">
+        <div className="flex items-center p-[64px] h-[121px]">
           <div className="flex flex-col items-center gap-[20px]">
-            <h2 className="font-['Montserrat',sans-serif] font-bold text-[64px] text-[#694ad4] text-center leading-[1.1]">
+            <h2 className="font-['Montserrat',sans-serif] font-bold text-[64px] text-[#694ad4] text-center leading-[1.1] w-[897px]">
               One app, infinite options.
             </h2>
-            <p className="font-['Montserrat',sans-serif] font-semibold text-[20px] text-[#302f37] text-center leading-[1.6]">
+            <p className="font-['Montserrat',sans-serif] font-semibold text-[20px] text-[#302f37] text-center leading-[1.6] w-[581px]">
               Fill out a single application in seconds.
             </p>
           </div>
@@ -75,14 +84,8 @@ function TrustedPartners() {
 
       </div>
 
-      {/* Waterfall Illustration - Full screen width */}
-      <div className="relative h-[1017px] w-screen overflow-hidden">
-        <img 
-          src={Waterfall} 
-          alt="Application waterfall showing Prime, Near-Prime, and Sub-Prime lenders" 
-          className="absolute h-full w-auto min-w-full left-[-50px] top-0 object-cover object-left"
-        />
-      </div>
+      {/* Spacer for waterfall image height */}
+      <div className="h-[1000px]"></div>
     </section>
   )
 }
