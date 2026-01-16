@@ -36,14 +36,7 @@ function Hero() {
             </button>
           </div>
 
-          {/* Green diagonal accent bar */}
-          <div className="absolute left-[626px] top-[30px] w-[992.418px] h-[572.973px] flex items-center justify-center pointer-events-none">
-            <div className="rotate-[30deg] skew-x-[-26.565deg]">
-              <div className="w-[217.464px] h-[928.482px] bg-[#1fef8a]" />
-            </div>
-          </div>
-
-          {/* Hero illustration - larger size */}
+          {/* Hero illustration with gradient accent included in SVG */}
           <div className="absolute left-[400px] top-[50px] w-[900px] h-[750px] pointer-events-none">
             <img 
               src={heroImage} 
