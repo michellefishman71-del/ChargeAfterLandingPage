@@ -1,16 +1,120 @@
-# React + Vite
+# ChargeAfter Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive landing page for ChargeAfter - a point-of-sale financing platform that connects merchants with multiple lenders to offer consumer financing options.
 
-Currently, two official plugins are available:
+![ChargeAfter](https://chargeafter.com/wp-content/uploads/2023/01/chargeafter-logo.svg)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎨 Project Overview
 
-## React Compiler
+This landing page was built as a pixel-perfect implementation of a Figma design. The page showcases ChargeAfter's embedded lending platform with the following sections:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Navigation** - Header with logo and navigation links
+- **Hero Section** - Main banner with headline, subheadline, and CTA button
+- **Trusted Partners** - Partner logos and waterfall illustration showing Prime/Near-Prime/Sub-Prime lenders
+- **Features Section** - 3-step flow (Apply → Get Approved → Start The Project) and 6 feature cards
+- **Footer** - CTA section, link columns, social media icons, and copyright bar
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Technology | Purpose |
+|------------|---------|
+| **React 18** | UI component library |
+| **Vite** | Build tool and development server |
+| **Tailwind CSS v4** | Utility-first CSS framework |
+| **JavaScript (ES6+)** | Programming language |
+| **PostCSS** | CSS processing |
+| **ESLint** | Code linting |
+
+## 📁 Project Structure
+
+```
+landing-page/
+├── public/              # Static assets
+├── src/
+│   ├── assets/          # Images, icons, and SVGs
+│   ├── components/      # React components
+│   │   ├── Navigation.jsx
+│   │   ├── Hero.jsx
+│   │   ├── TrustedPartners.jsx
+│   │   ├── Features.jsx
+│   │   └── Footer.jsx
+│   ├── App.jsx          # Main app component
+│   ├── App.css          # App-specific styles
+│   ├── index.css        # Global styles & Tailwind imports
+│   └── main.jsx         # Entry point
+├── index.html           # HTML template
+├── package.json         # Dependencies and scripts
+├── vite.config.js       # Vite configuration
+├── tailwind.config.js   # Tailwind configuration
+└── postcss.config.js    # PostCSS configuration
+```
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- **Node.js** (v18 or higher recommended)
+- **npm** or **yarn**
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/michellefishman71-del/ChargeAfterLandingPage.git
+   cd ChargeAfterLandingPage
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**
+   ```bash
+   npm run dev
+   ```
+
+4. **Open in browser**
+   
+   The app will be running at [http://localhost:5173](http://localhost:5173)
+
+### Available Scripts
+
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start development server with hot reload |
+| `npm run build` | Build for production |
+| `npm run preview` | Preview production build locally |
+| `npm run lint` | Run ESLint to check code quality |
+
+## 🎯 Features
+
+- ✅ Pixel-perfect implementation from Figma design
+- ✅ Responsive button hover effects (green → dark/white transitions)
+- ✅ Smooth CSS transitions and animations
+- ✅ Optimized assets and SVG icons
+- ✅ Clean, maintainable component architecture
+- ✅ Modern React best practices
+
+## 📐 Design Reference
+
+This project was built based on a Figma design file:
+- **Figma File**: ChargeAfter_Michelle_Fishman
+- **Design System**: Custom colors, Montserrat & Inter fonts
+
+### Color Palette
+
+| Color | Hex | Usage |
+|-------|-----|-------|
+| Primary Green | `#1fef8a` | CTA buttons |
+| Dark Gray | `#302f37` | Text, hover states |
+| Light Background | `#f9f8fd` | Page background |
+| White | `#ffffff` | Text on dark backgrounds |
+
+## 👩‍💻 Author
+
+**Michelle Fishman**
+
+## 📄 License
+
+This project is for demonstration purposes as part of a ChargeAfter designer assignment.
