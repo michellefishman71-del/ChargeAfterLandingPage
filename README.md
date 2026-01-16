@@ -1,6 +1,8 @@
 # ChargeAfter Landing Page
 
-A modern, responsive landing page for ChargeAfter - a point-of-sale financing platform that connects merchants with multiple lenders to offer consumer financing options.
+## Project Summary
+
+This project involved designing a B2B landing page tailored for Payments Directors at major brands. The primary objective was to demonstrate the value of ChargeAfter's financing platform and convince decision-makers to implement the solution across their contractor networks. The design focuses on establishing enterprise-level trust while proving that the tool is intuitive and accessible for field users.
 
 ![ChargeAfter](https://chargeafter.com/wp-content/uploads/2023/01/chargeafter-logo.svg)
 
