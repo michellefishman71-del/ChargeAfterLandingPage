@@ -1,19 +1,18 @@
-const gridImage = "http://localhost:3845/assets/d2b27b8d56a23c363cbb974d0191efd0e0d6411c.svg"
-const heroImage = "http://localhost:3845/assets/4d25556765cdf4ef4bb873c02dd8cbfe57495f3c.png"
-const accentImage = "http://localhost:3845/assets/a8385e4adb71e1171de1dca40fed96e0a8ebbf45.svg"
-const arrowIcon = "http://localhost:3845/assets/0aa41df9537263d7f579ba9deb3b093379468074.svg"
+import heroImage from '../assets/Hero.svg'
 
 function Hero() {
   return (
     <section className="relative w-full h-[1124px] bg-[#f9f8fd] overflow-hidden">
+      {/* Dotted grid background */}
+      <div 
+        className="absolute inset-0 pointer-events-none opacity-30"
+        style={{
+          backgroundImage: 'radial-gradient(circle, #c0c6c5 1px, transparent 1px)',
+          backgroundSize: '24px 24px',
+        }}
+      />
+      
       <div className="relative w-[1441px] h-full mx-auto">
-        {/* Grid background - positioned behind content */}
-        <div className="absolute left-1/2 top-[-478px] -translate-x-1/2 w-[2942.859px] h-[1699.06px] flex items-center justify-center pointer-events-none">
-          <div className="rotate-[30deg] skew-x-[-26.565deg]">
-            <img src={gridImage} alt="" className="w-[1588.023px] h-[1810.097px]" />
-          </div>
-        </div>
-
         {/* Content container - exact Figma positions */}
         <div className="absolute left-[105px] top-[151px] w-[1618.418px] h-[751px]">
           {/* Text block */}
@@ -40,16 +39,16 @@ function Hero() {
           {/* Green diagonal accent bar */}
           <div className="absolute left-[626px] top-[30px] w-[992.418px] h-[572.973px] flex items-center justify-center pointer-events-none">
             <div className="rotate-[30deg] skew-x-[-26.565deg]">
-              <img src={accentImage} alt="" className="w-[217.464px] h-[928.482px]" />
+              <div className="w-[217.464px] h-[928.482px] bg-[#1fef8a]" />
             </div>
           </div>
 
-          {/* Hero illustration - EXACT Figma position */}
-          <div className="absolute left-[536px] top-[124px] w-[738px] h-[627px] overflow-hidden pointer-events-none">
+          {/* Hero illustration - larger size */}
+          <div className="absolute left-[400px] top-[50px] w-[900px] h-[750px] pointer-events-none">
             <img 
               src={heroImage} 
               alt="House illustration" 
-              className="absolute w-[210.57%] h-[135.18%] left-[-55.28%] top-[-15.2%] max-w-none"
+              className="w-full h-full object-contain"
             />
           </div>
         </div>
