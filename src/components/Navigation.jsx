@@ -29,8 +29,8 @@ function Navigation() {
               Resources
             </a>
           </div>
-          <button className="bg-[#1fef8a] rounded-[48px] w-[166px] h-[36px] flex items-center justify-center px-[9px]">
-            <span className="font-['Montserrat',sans-serif] text-[14px] font-medium leading-[20px] text-[#0a0a0a] tracking-[-0.1504px] text-center whitespace-nowrap">
+          <button className="bg-[#1fef8a] hover:bg-[#302f37] rounded-[48px] w-[166px] h-[36px] flex items-center justify-center px-[9px] cursor-pointer transition-all duration-300 group">
+            <span className="font-['Montserrat',sans-serif] text-[14px] font-medium leading-[20px] text-[#0a0a0a] group-hover:text-white tracking-[-0.1504px] text-center whitespace-nowrap transition-colors duration-300">
               Request a Demo
             </span>
           </button>
