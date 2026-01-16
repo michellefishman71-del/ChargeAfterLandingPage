@@ -27,11 +27,13 @@ function Hero() {
               </p>
             </div>
 
-            <button className="bg-[#1fef8a] rounded-[48px] w-[296px] px-[69px] py-[12px] flex items-center justify-center gap-[10px] cursor-pointer">
-              <span className="text-[#302f37] text-[18px] leading-[28px] font-semibold font-['Montserrat',sans-serif] tracking-[-0.4395px] whitespace-nowrap">
+            <button className="group bg-[#1fef8a] hover:bg-[#302f37] rounded-[48px] w-[296px] px-[69px] py-[12px] flex items-center justify-center gap-[10px] cursor-pointer transition-all duration-300">
+              <span className="text-[#302f37] group-hover:text-white text-[18px] leading-[28px] font-semibold font-['Montserrat',sans-serif] tracking-[-0.4395px] whitespace-nowrap transition-colors duration-300">
                 Request a Demo
               </span>
-              <img src={arrowIcon} alt="" className="w-[16px] h-[16px]" />
+              <svg className="w-[16px] h-[16px] transition-colors duration-300" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 8H15M15 8L8.5 1.5M15 8L8.5 14.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-[#302f37] group-hover:text-white"/>
+              </svg>
             </button>
           </div>
 
