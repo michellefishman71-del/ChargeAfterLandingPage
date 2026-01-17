@@ -1,16 +1,13 @@
 import heroImage from '../assets/Hero.svg'
+import gridImage from '../assets/grid.svg'
 
 function Hero() {
   return (
     <section className="relative w-full h-[1124px] bg-[#f9f8fd] overflow-hidden">
-      {/* Dotted grid background */}
-      <div 
-        className="absolute inset-0 pointer-events-none opacity-30"
-        style={{
-          backgroundImage: 'radial-gradient(circle, #c0c6c5 1px, transparent 1px)',
-          backgroundSize: '24px 24px',
-        }}
-      />
+      {/* Grid background from assets */}
+      <div className="absolute inset-0 pointer-events-none" style={{ transform: 'scale(1.05)', transformOrigin: 'center center' }}>
+        <img src={gridImage} alt="" className="w-full h-full" />
+      </div>
       
       <div className="relative w-[1441px] h-full mx-auto">
         {/* Content container - exact Figma positions */}
@@ -36,8 +33,8 @@ function Hero() {
             </button>
           </div>
 
-          {/* Hero illustration with gradient accent included in SVG */}
-          <div className="absolute left-[400px] top-[50px] w-[900px] h-[750px] pointer-events-none">
+          {/* Hero illustration - exact Figma position */}
+          <div className="absolute left-[536px] top-[124px] w-[738px] h-[627px] pointer-events-none">
             <img 
               src={heroImage} 
               alt="House illustration" 
