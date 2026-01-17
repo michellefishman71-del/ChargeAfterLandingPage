@@ -3,7 +3,7 @@ import gridImage from '../assets/grid.svg'
 
 function Hero() {
   return (
-    <section className="relative w-full h-[1124px] bg-[#f9f8fd] overflow-hidden">
+    <section className="relative w-full h-[1074px] bg-[#f9f8fd] overflow-hidden">
       {/* Grid background from assets */}
       <div className="absolute inset-0 pointer-events-none" style={{ transform: 'scale(1.05)', transformOrigin: 'center center' }}>
         <img src={gridImage} alt="" className="w-full h-full" />
@@ -34,12 +34,11 @@ function Hero() {
           </div>
 
           {/* Hero illustration - exact Figma position */}
-          <div className="absolute left-[536px] top-[124px] w-[738px] h-[627px] pointer-events-none overflow-hidden">
+          <div className="absolute left-[568px] top-[40px] w-[780px] h-[665px] pointer-events-none">
             <img 
               src={heroImage} 
               alt="House illustration" 
-              className="absolute w-[210.57%] h-[135.18%] max-w-none"
-              style={{ left: '-55.28%', top: '-15.2%' }}
+              className="w-full h-full object-contain"
             />
           </div>
         </div>
