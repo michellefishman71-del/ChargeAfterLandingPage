@@ -34,11 +34,12 @@ function Hero() {
           </div>
 
           {/* Hero illustration - exact Figma position */}
-          <div className="absolute left-[536px] top-[124px] w-[738px] h-[627px] pointer-events-none">
+          <div className="absolute left-[536px] top-[124px] w-[738px] h-[627px] pointer-events-none overflow-hidden">
             <img 
               src={heroImage} 
               alt="House illustration" 
-              className="w-full h-full object-contain"
+              className="absolute w-[210.57%] h-[135.18%] max-w-none"
+              style={{ left: '-55.28%', top: '-15.2%' }}
             />
           </div>
         </div>
