@@ -3,7 +3,7 @@ import gridImage from '../assets/grid.svg'
 
 function Hero() {
   return (
-    <section className="relative w-full h-[1074px] bg-[#f9f8fd] overflow-hidden">
+    <section className="relative w-full h-[1000px] bg-[#f9f8fd] overflow-hidden">
       {/* Grid background from assets */}
       <div className="absolute inset-0 pointer-events-none" style={{ transform: 'scale(1.05)', transformOrigin: 'center center' }}>
         <img src={gridImage} alt="" className="w-full h-full" />
